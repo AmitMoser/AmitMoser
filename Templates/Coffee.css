@@ -8,6 +8,11 @@
 .FirstNav{
     grid-area: Nav;
     background-color: gray ;
+    animation: 3s linear 0s 1 running myOpacity;
+
+}
+@keyframes myOpacity{
+    50%{opacity: 0;}
 }
 .Main{
     grid-area: Main;
