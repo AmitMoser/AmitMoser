@@ -1,58 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>
-    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="Coffee.js"></script>
+    <link rel="stylesheet" href="Coffee.css">
+    <title>HomePage</title>
 </head>
-<body style="background-color: lightgray;">
-    <span style="text-align: center; font-size: x-large ;">
-        <header style="padding: 5px;">
-            <h1>
-                Welcome To My First Web Page On Coffee
-            </h1>
-        </header>
-    </span>
-    <span style="margin: 2px;margin-right: 400px; margin-left: 400px ;" >
-        <img src="../Static/coffee-beans.jpeg" width="600" height="600" alt="">
-    </span>
-    <span style="text-align: center ;padding: 5px;">
-        <h2> Few Facts About Coffee :</h2>
-    </span>
-    <section>
-        <div style="margin-left: 600px; margin-right: 600px;">
-            <div style="display: inline-block; margin: 2px;">
-                <p> <img src="../Static/coffeeicon1.jpeg" style="height: 50px; width: 50px;" alt=""></p>
-            </div>
-            <div  style=" display: inline-block; margin: 2px;" >
-                <p> <img src="../Static/coffeeicon2.jpeg" alt="" style="height: 50px; width: 50px;"></p>
-            </div>
-            <div style="display: inline-block; margin: 2px;">
-                <p> <img src="../Static/coffeeicon3.jpeg" alt="" style="height: 50px; width: 50px;"></p>
-            </div>
-        </div> 
-    </section>
 
-    <span>
-        <ul style="margin-left: 550px; margin-right: 300px;">
-            <li style="font-size: large;">Brasil Grows the most coffee in the world </li>
-            <li style="font-size: large;">Only two U.S. states produce coffee</li>
-            <li style="font-size: large;">Espresson Means "Pressed Out" In Italian</li>
-            <li style="font-size: large;">The world's most expensive coffee can cost more than 600$ a pound</li>
-        </ul>
-    </span>
-   <span style= "text-align: center;">
-        <h2 >Want To learn more about coffee ??</h2>
-   </span>
-   <span style="padding-bottom: 2cm ; text-align: center; margin-left: 700px; margin-right: 700px; width: 500; height: 500;">
-    <a href="../Templates/ContactMe.html" target="_blank">
-        <button> Contact Us </button>
-    </a>
-   </span>
-  
-   
+<body style="background-color: lightgrey;">
+    <div class="Container">
+        <div class="FirstNav">
+            <nav class="NavBar">
+                <ul class="NavList">
+                    <li class="listPage"> <a href="../Templates/FirstHW.html"> <button class="Buttons" style="vertical-align:middle" id="HP"><span class="animations"> Home Page </span></button> </a></li>
+                    <li class="listPage"> <a href="../Templates/ContactMe.html"> <button class="Buttons" style="vertical-align:middle" id="Contact-us"> <span> Contact Us </span></button> </a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="TopHP">
+            <header>
+                <h1>Welcome To My First Web Page On Coffee</h1>
+            </header>
+        </div>
+        <div class="Main">
+            <h2 class="FactsHP"> Few Facts About Coffee :</h2>
+            <section class="Sections">
+                <div class="IconsHP">
+                    <p> <img src="../Static/coffeeicon1.jpeg" style="height: 50px; width: 50px;" alt=""></p>
+                </div>
+                <div class="IconsHP">
+                    <p> <img src="../Static/coffeeicon2.jpeg" alt="" style="height: 50px; width: 50px;"></p>
+                </div>
+                <div class="IconsHP">
+                    <p> <img src="../Static/coffeeicon3.jpeg" alt="" style="height: 50px; width: 50px;"></p>
+                </div>
+            </section>
+            <ul class="MidP">
+                <li class="MidList">Brasil Grows the most coffee in the world </li>
+                <li class="MidList">Only two U.S. states produce coffee</li>
+                <li class="MidList">Espresson Means "Pressed Out" In Italian</li>
+                <li class="MidList">The world's most expensive coffee can cost more than 600$ a pound</li>
+            </ul>
+            <h2 id="WantMore">Want To learn more about coffee ??</h2>
+            <button class="regBtn" id="yesBtn" onclick= "changeText()" >Press Me!!</button>
+        </div>
+    </div>
 </body>
+
 </html>
